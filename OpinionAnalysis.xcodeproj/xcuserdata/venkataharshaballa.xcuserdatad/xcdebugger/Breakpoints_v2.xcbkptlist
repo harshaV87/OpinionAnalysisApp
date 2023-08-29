@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6E4DF6EA-62DF-448B-ACAC-C4B0B75EC05F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "610067BA-104B-4EC7-9B5A-4CE728D7C810"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpinionAnalysis/Views/SignInView/SignInView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1515A421-45D5-4433-AEB9-36F7A5EA676B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpinionAnalysis/Views/SignInView/SignInView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1515A421-45D5-4433-AEB9-36F7A5EA676B - 4f5cf3f45c1d57e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpinionAnalysis.ContentView.body.getter : some"
+                  moduleName = "OpinionAnalysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkataharshaballa/Downloads/OpinionAnalysis/OpinionAnalysis/Views/SignInView/SignInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "280"
+                  endingLineNumber = "280"
+                  offsetFromSymbolStart = "1714">
+               </Location>
+               <Location
+                  uuid = "1515A421-45D5-4433-AEB9-36F7A5EA676B - 4f5cf3f45c1d577a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpinionAnalysis.ContentView.body.getter : some"
+                  moduleName = "OpinionAnalysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkataharshaballa/Downloads/OpinionAnalysis/OpinionAnalysis/Views/SignInView/SignInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "283"
+                  endingLineNumber = "283"
+                  offsetFromSymbolStart = "1760">
+               </Location>
+               <Location
+                  uuid = "1515A421-45D5-4433-AEB9-36F7A5EA676B - 4f5cf3f45c1d57e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpinionAnalysis.ContentView.body.getter : some"
+                  moduleName = "OpinionAnalysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkataharshaballa/Downloads/OpinionAnalysis/OpinionAnalysis/Views/SignInView/SignInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "280"
+                  endingLineNumber = "280"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "1515A421-45D5-4433-AEB9-36F7A5EA676B - 4f5cf3f45c1d57e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpinionAnalysis.ContentView.body.getter : some"
+                  moduleName = "OpinionAnalysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkataharshaballa/Downloads/OpinionAnalysis/OpinionAnalysis/Views/SignInView/SignInView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "280"
+                  endingLineNumber = "280"
+                  offsetFromSymbolStart = "2160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
