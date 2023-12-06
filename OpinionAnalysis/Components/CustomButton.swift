@@ -13,7 +13,7 @@ struct CustomButton: View {
     var buttonAction: (() -> Void)
     var backGroundColor: Color?
     var body: some View {
-       // we need a text and an icon label and an action
+       // text, icon, label and action
         Button {
             buttonAction()
         } label: {
