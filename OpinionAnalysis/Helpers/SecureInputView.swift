@@ -21,8 +21,6 @@ struct SecureInputView: View {
     }
    
     var body: some View {
-        
-    
             ZStack {
                 Group {
                     if isSecured {
@@ -37,15 +35,7 @@ struct SecureInputView: View {
                     Image(systemName: self.isSecured ? "eye.slash" : "eye").accentColor(.gray)
                 }
 
-            }
-        
-        
-        
-        
-        
-        
-    }
-    
-    
+            }  
+    }   
 }
 
