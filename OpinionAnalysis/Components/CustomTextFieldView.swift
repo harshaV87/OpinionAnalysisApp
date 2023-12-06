@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CustomTextFieldView: View {
-    // as this is a child view it is binding, we can do the same with state
+    // child view binding
     @Binding var textInput: String
     @State var isSecureFromButton: Bool = true
     let title: String
     let placeHolderText : String
     var isSecureTextField: Bool = false
     var body: some View {
-           // we have a label, textview and a placeholder
+           // label, textview and a placeholder
         VStack(alignment: .leading, spacing: 5.0) {
             Text(title).font(
                 .custom(
@@ -23,39 +23,26 @@ struct CustomTextFieldView: View {
                 fixedSize: 16)
                 //.weight(.light)
             )
-      
+      // secure text field
             if isSecureTextField {
-                
                 HStack {
                     ZStack {
                         Group {
                             if isSecureFromButton {
-                                SecureField(placeHolderText, text: $textInput)
-                                    
+                                SecureField(placeHolderText, text: $textInput)      
                             } else {
-                                TextField(placeHolderText, text: $textInput).modifier(CustomFontModifier())
-                                    
+                                TextField(placeHolderText, text: $textInput).modifier(CustomFontModifier())      
                             }
-                        }
-                        
-                        
-
-                    }
-                    
+                        }       
+                    }   
                     Button {
                         isSecureFromButton.toggle()
                     } label: {
                         Image(systemName: self.isSecureFromButton ? "eye.slash" : "eye")
                     } .padding(.trailing, 8)
                 }
-                
-                
-                
-                
                // SecureField(placeHolderText, text: $textInput)
                 Rectangle().frame(height: 1).foregroundColor(.secondary)
-                
-                
             } else {
                 TextField(placeHolderText, text: $textInput).font(
                     .custom(
