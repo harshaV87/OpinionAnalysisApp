@@ -56,7 +56,7 @@ case getCaptions(videoId: String)
     }
     
     var mockFile: String? {
-        // MARK: THIS IS WHAT YOU WOULD WANT TO INJECT INTO THE MOCK TO GET THE TESTS DONE
+        // MARK:Used for tests
         switch self {
             // EXAMPLE
         case .getComments(_,_) :
@@ -65,9 +65,7 @@ case getCaptions(videoId: String)
             return ""
         
         }
-    }
-    
-    
+    }  
 }
 
 
