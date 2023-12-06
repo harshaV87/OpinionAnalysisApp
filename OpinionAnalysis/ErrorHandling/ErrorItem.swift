@@ -7,9 +7,6 @@
 
 import Foundation
 
-import Foundation
-
-
 struct ErrorItem: Identifiable {
     let id: UUID
     let error : Error
