@@ -22,22 +22,21 @@ class SentimentAnalysis: SentimentService {
             return sentiment?.rawValue ?? ""
     }
     
-    // MARK: Algo to remove the spaces as it is giving wrong sentiment values
+    // MARK: remove the spaces to avoid wrong sentiment values
     private func modifyTextInput(inputString: String) -> String {
         var indexesToDoTheOperations: [Int] = []
         var stringChars = [""]
         _ = inputString.map {stringChars.append(String($0))}
         
         for i in 0..<stringChars.count {
-            // remember these are the characters
             if (stringChars[i] == "!" || stringChars[i] == ".") && i != stringChars.count - 1 && stringChars[i + 1] == " "{
-                // here we get all the string indexes
+                // string indexes
                 indexesToDoTheOperations.append(i)
             }
         }
         var indexesToDelete : [Int] = []
         for indexOf in indexesToDoTheOperations {
-            // these are all indexes here
+            // all indexes
             var indexCount = indexOf + 1
             while stringChars[indexCount] == " " {
                 indexCount += 1
