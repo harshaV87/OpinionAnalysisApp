@@ -24,9 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         if autoLoginProperty == false {
             autoLoginPropertyCounter = 1
         }
-     
-    }
-    
+    }   
 }
 
 @main
