@@ -32,7 +32,6 @@ extension EnvironmentValues {
 
 struct EventHandlerViewModifier: ViewModifier {
     @Environment(\.eventClosure) var eventClosure
-    
     let handler: (Any) -> Any?
     
     func body(content: Content) -> some View {
