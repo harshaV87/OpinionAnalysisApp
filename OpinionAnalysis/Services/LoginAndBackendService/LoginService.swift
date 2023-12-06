@@ -71,17 +71,14 @@ extension PreferredAuthMethod {
 
 // we can create a service for the respective sdks
 
-// For apple
+// For apple as example 
 
 class AppleAuthService : NSObject, AuthService {
     
     var authType: PreferredAuthMethod = .apple
-    
     // init with viewController and serice delegate
     
     var delegate: AuthServiceDelegate?
-    // if there is a backend, init here
-    
     // Backend Service
     var backendAuth: BackendService?
     
@@ -103,15 +100,12 @@ class AppleAuthService : NSObject, AuthService {
     }
     
     func createUser() {
-        
     }
     
-    func deleteUser() async throws {
-        
+    func deleteUser() async throws { 
     }
     
-    func sendPasswordReset() async throws {
-        
+    func sendPasswordReset() async throws { 
     }
 }
 
@@ -170,7 +164,6 @@ class FirebaseAuthService: NSObject, AuthService {
 typealias AuthenticationViewSource = AuthServiceDelegate
 
 // Mediator
-
 class UserAuthenticator {
     private weak var source: AuthenticationViewSource?
     private var service: AuthService?
