@@ -27,14 +27,14 @@ class BiometricManager: ObservableObject, biometricService {
     }
     
     func setPolicyAndGetBiometry() {
-        // we can use other policies to evaluate
+        // other policies to evaluate
         canEvaluatePolicy = context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
         // set biometry type
         biometryType = context.biometryType
     }
     
     func authenticateWithBiometrics() async {
-        // lets start with the context and create a new instance of the context
+        // context and a new instance of the context
         context = LAContext()
         if let error = error {
             switch error.code {
@@ -52,7 +52,7 @@ class BiometricManager: ObservableObject, biometricService {
             }
         }
         if canEvaluatePolicy {
-            // this means biometrics are available
+            // biometrics are available
             var reason = ""
             switch biometryType {
             case .faceID : reason = "Log into your account using your faceid"
@@ -73,16 +73,14 @@ class BiometricManager: ObservableObject, biometricService {
                 authError = .biometricError
             }
         } else {
-            // biometrics are unfortunately not available
+            // biometrics are not available
             biometryType = .none
         }
     }
 }
 
 
-// lets create a protocol here
-
-
+// Biometric service protocol
 protocol biometricService {
     var biometryType: LABiometryType {get}
     var isAuthenticated : Bool {get}
